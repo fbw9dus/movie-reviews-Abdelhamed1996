@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #b8b5b5;
+}
+
+.Miancontainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#sidebar {
+  width: 300px;
+  height: 100vh;
+  background: #575555;
+  overflow: auto;
+  border: 1px solid gray;
+  white-space: space pre;
+}
+
+#container {
+  width: 1250px;
+  height: 750px;
+  background-image: url("../images/shutterisland.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 50px;
+  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.466);
+}
+
+.innercontainer {
+  width: 100%;
+  height: 100%;
+  background: rgba(136, 131, 131, 0.8);
+  position: static;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.innercontainer ul {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  height: 30px;
+}
+.innercontainer .text {
+  width: 600px;
+  margin-right: 0px;
+}
+.innercontainer .text h1 {
+  margin: 0;
+  padding: 40px;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 10px black;
+}
+.innercontainer .text h3 {
+  margin: 0;
+  padding: 10px 40px 40px 40px;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 10px black;
+}
+.innercontainer .text p {
+  padding-left: 40px;
+  color: white;
+  text-shadow: 5px 5px 10px black;
+}
+.innercontainer img {
+  height: 400px;
+  width: 300px;
+  margin: 70px;
+  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.466);
+}
+
+.sidechild {
+  height: 300px;
+  width: 100%;
+  background: gray;
+  border: 1px solid black;
+  margin: 10px 0px 10px 0px;
+  padding-left: 5px;
+  box-sizing: border-box;
+}
+.sidechild h2 {
+  padding-top: 5px;
+  margin: 0px;
+  color: white;
+}
+.sidechild p {
+  color: white;
+  padding: 5px 5px 5px 0px;
+}
+.sidechild ul {
+  padding-left: 0px;
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+}
+.sidechild:hover {
+  background: #4e4c4c;
+}
+
+.star {
+  width: 0;
+  height: 0;
+  margin: 5px 0;
+  position: relative;
+  display: block;
+  color: yellow;
+  border-right: 10px solid transparent;
+  border-bottom: 7px solid yellow;
+  border-left: 10px solid transparent;
+  transform: rotate(35deg);
+  margin-left: 0px;
+}
+.star:before {
+  width: 0;
+  height: 0;
+  border-bottom: 8px solid yellow;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  position: absolute;
+  top: -4.5px;
+  left: -6.5px;
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+.star:after {
+  position: absolute;
+  display: block;
+  color: yellow;
+  top: 0.2px;
+  left: -10.5px;
+  width: 0;
+  height: 0;
+  border-right: 10px solid transparent;
+  border-bottom: 7px solid yellow;
+  border-left: 10px solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+}
+
+.bigStar {
+  width: 0;
+  height: 0;
+  margin: 12.5px 0;
+  position: relative;
+  display: block;
+  color: yellow;
+  border-right: 25px solid transparent;
+  border-bottom: 17.5px solid yellow;
+  border-left: 25px solid transparent;
+  transform: rotate(35deg);
+  margin-left: 5px;
+}
+.bigStar:before {
+  width: 0;
+  height: 0;
+  border-bottom: 20px solid yellow;
+  border-left: 7.5px solid transparent;
+  border-right: 7.5px solid transparent;
+  position: absolute;
+  top: -11.25px;
+  left: -16.25px;
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+.bigStar:after {
+  position: absolute;
+  display: block;
+  color: yellow;
+  top: 0.5px;
+  left: -26.25px;
+  width: 0;
+  height: 0;
+  border-right: 25px solid transparent;
+  border-bottom: 17.5px solid yellow;
+  border-left: 25px solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+}
+
+.noStar {
+  width: 0;
+  height: 0;
+  margin: 5px 0;
+  position: relative;
+  display: block;
+  color: #f7f7f7;
+  border-right: 10px solid transparent;
+  border-bottom: 7px solid #f7f7f7;
+  border-left: 10px solid transparent;
+  transform: rotate(35deg);
+}
+.noStar:before {
+  width: 0;
+  height: 0;
+  border-bottom: 8px solid #f7f7f7;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  position: absolute;
+  top: -4.5px;
+  left: -6.5px;
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+.noStar:after {
+  position: absolute;
+  display: block;
+  color: #f7f7f7;
+  top: 0.2px;
+  left: -10.5px;
+  width: 0;
+  height: 0;
+  border-right: 10px solid transparent;
+  border-bottom: 7px solid #f7f7f7;
+  border-left: 10px solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+}
+
+.bigNoStar {
+  width: 0;
+  height: 0;
+  margin: 12.5px 0;
+  position: relative;
+  display: block;
+  color: #f7f7f7;
+  border-right: 25px solid transparent;
+  border-bottom: 17.5px solid #f7f7f7;
+  border-left: 25px solid transparent;
+  transform: rotate(35deg);
+  margin-left: 5px;
+}
+.bigNoStar:before {
+  width: 0;
+  height: 0;
+  border-bottom: 20px solid #f7f7f7;
+  border-left: 7.5px solid transparent;
+  border-right: 7.5px solid transparent;
+  position: absolute;
+  top: -11.25px;
+  left: -16.25px;
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+.bigNoStar:after {
+  position: absolute;
+  display: block;
+  color: #f7f7f7;
+  top: 0.5px;
+  left: -26.25px;
+  width: 0;
+  height: 0;
+  border-right: 25px solid transparent;
+  border-bottom: 17.5px solid #f7f7f7;
+  border-left: 25px solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+}
+
+/*# sourceMappingURL=style.css.map */
